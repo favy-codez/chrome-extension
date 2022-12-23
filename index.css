@@ -9,3 +9,18 @@ input{
     width: 100%;
     padding: 10px 0;
 }
+
+bo
+
+.container{
+    max-width: 400px;
+    display: grid;
+    place-items: center;
+}
+
+button{
+    background: #5f9341;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+}
