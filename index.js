@@ -8,3 +8,6 @@ inputBtn.addEventListener("click", function(){
 // function saveLead() {
 //     console.log("Button clicked!")
 // }
+
+let myLeads = []
+const inputEl = document.getElementById("input-el")
