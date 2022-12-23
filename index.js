@@ -1,6 +1,11 @@
 let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+// ** challenge **
+// Create an unordered list element (<ul>) with id="ul-el"
+// 2. Grab the unordered list and store it in a const variable called ulEl
+
 
 // we spectify the event we want to listen to (click) and the fxn we want to evoke
 inputBtn.addEventListener("click", function(){
@@ -18,8 +23,6 @@ inputBtn.addEventListener("click", function(){
 //     console.log("Button clicked!")
 //  }
 
-// ** challenge **
-// Create an unordered list element (<ul>) with id="ul-el"
-// 2. Grab the unordered list and store it in a const variable called ulEl
+
 
 
