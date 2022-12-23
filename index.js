@@ -4,6 +4,13 @@ let inputBtn = document.getElementById("input-btn")
 
 // we spectify the event we want to listen to (click) and the fxn we want to evoke
 inputBtn.addEventListener("click", function(){
+    // ************
+// ** challenge **
+    // Push the value from the inputEl into the myLeads array 
+    // instead of the hard-coded "www.awesomeleads.com" value
+    // Google -> "get value from input field javascript" - we use .value for this
+// ************
+
     myLeads.push(inputEl.value)
     console.log("myLeads")
 })
@@ -12,10 +19,5 @@ inputBtn.addEventListener("click", function(){
 //     console.log("Button clicked!")
 //  }
 
-// ************
-// ** challenge **
-    // Push the value from the inputEl into the myLeads array 
-    // instead of the hard-coded "www.awesomeleads.com" value
-    // Google -> "get value from input field javascript" - we use .value for this
-// ************
+
 
