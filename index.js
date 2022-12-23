@@ -31,8 +31,12 @@ for (let i = 0; i < myLeads.length; i++) {
     // here is the solution if we are using text content
     // ---> ulEl.textContent += myLeads[i] + " "
     // but if we are using innerHTML we say 
-    // we are adding += so it doesn't display o nly the last word but from 1st to last
-    ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+    // we are adding += so it doesn't display only the last word but from 1st to last
+    // ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+    // another method for line 35 is
+    const li = document.createElement("li")
+    li.textContent = myLeads[i]
+    ulEl.append(li)
 }
 
 
