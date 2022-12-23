@@ -24,5 +24,11 @@ inputBtn.addEventListener("click", function(){
 //  }
 
 
+for (let i = 0; i < myLeads.length; i++) {
+    // ** challenge **
+    // Render the leads in the unordered list using ulEl.textContent
+    ulEl.textContent += myLeads[i] + " "
+}
+
 
 
