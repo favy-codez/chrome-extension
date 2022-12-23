@@ -2,12 +2,20 @@ let inputBtn = document.getElementById("input-btn")
 
 // we spectify the event we want to listen to (click) and the fxn we want to evoke
 inputBtn.addEventListener("click", function(){
-    console.log("Button clicked from addEventListener")
+    myLeads.push("www.awesomelead.com")
+    console.log("")
 })
-// another method is to add this to the button in the html /onclick="saveLead()"/ and this in the js
-// function saveLead() {
+// Another method is to add this to the button in the html /onclick="saveLead()"/ and this in the js
+//  function saveLead() {
 //     console.log("Button clicked!")
-// }
+//  }
+
+// ************
+// ** challenge **
+    // Push the value from the inputEl into the myLeads array 
+    // instead of the hard-coded "www.awesomeleads.com" value
+    // Google -> "get value from input field javascript"
+// ************
 
 let myLeads = []
 const inputEl = document.getElementById("input-el")
