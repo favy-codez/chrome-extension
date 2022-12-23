@@ -1,5 +1,4 @@
-let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
-// let myLeads = []
+let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
@@ -17,14 +16,25 @@ inputBtn.addEventListener("click", function(){
 
 
     myLeads.push(inputEl.value)
-    console.log(myLeads);
+    // ** challenge **
+    // 2. Call the renderLeads() function
+    renderLeads()
 })
 // Another method is to add this to the button in the html /onclick="saveLead()"/ and this in the js
 //  function saveLead() {
 //     console.log("Button clicked!")
 //  }
 
+// ** challenge **
+// 1. Create a variable, listItems, to hold all the HTML for the list items
+// Assign it to an empty string to begin with
+// 2. Add the item to the listItems variable instead of the ulEl.innerHTML
+// 3. Render the listItems inside the unordered list using ulEl.innerHTML
 
+// ** challenge **
+// 1. Wrap the code below in a renderLeads() function
+function renderLeads(){
+    let listItems = ""
 for (let i = 0; i < myLeads.length; i++) {
     // ** challenge **
     // Render the leads in the unordered list using ulEl.textContent
@@ -32,12 +42,13 @@ for (let i = 0; i < myLeads.length; i++) {
     // ---> ulEl.textContent += myLeads[i] + " "
     // but if we are using innerHTML we say 
     // we are adding += so it doesn't display only the last word but from 1st to last
-    // ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
-    // another method for line 35 is
-    const li = document.createElement("li")
-    li.textContent = myLeads[i]
-    ulEl.append(li)
+    ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+    // another method for line 39 is
+    // const li = document.createElement("li")
+    // li.textContent = myLeads[i]
+    // ulEl.append(li)
 }
+ulEl.innerHTML = listItems
 
-
+}
 
