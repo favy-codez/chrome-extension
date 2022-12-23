@@ -1,4 +1,5 @@
-let myLeads = []
+let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
+// let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
@@ -27,7 +28,11 @@ inputBtn.addEventListener("click", function(){
 for (let i = 0; i < myLeads.length; i++) {
     // ** challenge **
     // Render the leads in the unordered list using ulEl.textContent
-    ulEl.textContent += myLeads[i] + " "
+    // here is the solution if we are using text content
+    // ---> ulEl.textContent += myLeads[i] + " "
+    // but if we are using innerHTML we say 
+    // we are adding += so it doesn't display o nly the last word but from 1st to last
+    ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
 }
 
 
