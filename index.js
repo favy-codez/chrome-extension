@@ -35,7 +35,7 @@ inputBtn.addEventListener("click", function(){
 // 1. Wrap the code below in a renderLeads() function
 function renderLeads(){
     let listItems = ""
-for (let i = 0; i < myLeads.length; i++) {
+    for (let i = 0; i < myLeads.length; i++) {
     // ** challenge **
     // Render the leads in the unordered list using ulEl.textContent
     // here is the solution if we are using text content
@@ -47,8 +47,7 @@ for (let i = 0; i < myLeads.length; i++) {
     // const li = document.createElement("li")
     // li.textContent = myLeads[i]
     // ulEl.append(li)
-}
-ulEl.innerHTML = listItems
-
+    }
+    ulEl.innerHTML = listItems
 }
 
